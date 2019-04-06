@@ -11,6 +11,8 @@ npm i -g @angular/cli
 npm i
 ```
 
+.NET Core Backend: https://github.com/thinktecture/todo-netcore-api
+
 ## Build
 
 ```sh
