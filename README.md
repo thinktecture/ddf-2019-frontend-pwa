@@ -1,27 +1,24 @@
-# MyPwa
+# Frontend der Zukunft: Progressive Web Apps für .NET-Entwickler
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+[.NET Day Franken](https://www.dotnet-day-franken.de/workshops/item/1-ws2-frontend-der-zukunft-progressive-web-apps-fuer-net-entwickler), Freitag, 5. April 2019, 9:00–16:30 Uhr
 
-## Development server
+Your trainer: [Christian Liebel](https://twitter.com/christianliebel), Thinktecture.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+npm i -g @angular/cli
+npm i
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```sh
+ng build --prod
+cd dist/my-pwa
+npx lite-server
+```
 
-## Running unit tests
+## Disclaimer
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Remember: This is demo code (subscribe() in a subscribe(), using Promises instead of Observables, no forms API etc.)! Do not use it for production.

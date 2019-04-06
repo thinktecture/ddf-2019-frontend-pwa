@@ -1,0 +1,9 @@
+<input type="text" #input>
+<button (click)="createTodo(input.value)">Todo erzeugen</button>
+
+<mat-selection-list (selectionChange)="toggle($event)">
+  <mat-list-option *ngFor="let todo of todos | async"
+                   [selected]="todo.completed" [value]="todo">
+    {{ todo.text }}
+  </mat-list-option>
+</mat-selection-list>
